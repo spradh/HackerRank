@@ -1,0 +1,5 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+m,n=int(raw_input()),int(raw_input())
+print m/n
+print  m-m/n*n
+print divmod(m,n)

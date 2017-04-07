@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+"""That a median on the hypotenuse divides the right angled triangle in two isoceles triangle."""
+import math
+p,b=float(raw_input()),float(raw_input())
+
+print str(int(round(math.degrees(math.atan2(p,b)))))+"°"

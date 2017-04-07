@@ -1,0 +1,5 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+w=len(format(n, 'b'))
+for i in xrange(1,n+1):
+    print str(i).rjust(w," "),format(i, 'o').rjust(w," "),format(i, 'x').upper().rjust(w," "),format(i, 'b').rjust(w," ")

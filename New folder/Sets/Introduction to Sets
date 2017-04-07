@@ -1,0 +1,5 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=raw_input()
+s=set(map(int,raw_input().split()))
+
+print (sum(s)*1.0)/len(s)

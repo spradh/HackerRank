@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+s,k=raw_input(), int(raw_input())
+
+list1=[]
+for i in range(0,len(s),k):
+    list1.append(s[i:i+k])
+
+list2=[]
+for i in list1:
+    t=''
+    for l in i:
+        if l not in t:
+            t=t+l
+    print t  
+            

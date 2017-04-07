@@ -1,0 +1,4 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+dum1,n,dum2,m=raw_input(),set(raw_input().split()),raw_input(),set(raw_input().split())
+
+print len(n.intersection(m))

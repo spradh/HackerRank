@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+word=raw_input()
+index_loca=raw_input().split()
+index=int(index_loca[0])
+letter=index_loca[1]
+
+print word[:index]+letter+word[index+1:]

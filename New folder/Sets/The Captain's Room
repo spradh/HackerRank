@@ -1,0 +1,5 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+k,n=int(raw_input()),map(int,raw_input().split())
+myset=set(n)
+
+print (sum(myset)*k-sum(n))/(k-1)

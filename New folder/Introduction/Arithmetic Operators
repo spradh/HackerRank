@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+"""Read two integers from STDIN and print three lines where:
+
+The first line contains the sum of the two numbers.
+The second line contains the difference of the two numbers (first - second).
+The third line contains the product of the two numbers."""
+
+
+
+n1=int(raw_input().strip())
+n2=int(raw_input().strip())
+
+print n1+n2
+print n1-n2
+print n1*n2

@@ -1,0 +1,6 @@
+import numpy
+
+ins=numpy.array(map(float,raw_input().split()))
+print numpy.floor(ins)
+print numpy.ceil(ins)
+print numpy.rint(ins)

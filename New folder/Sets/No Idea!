@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+input_=raw_input().split()
+n=input_[0]
+m=input_[1]
+output=int()
+c=map(int,raw_input().split())
+a=set(map(int,raw_input().split()))
+b=set(map(int,raw_input().split()))
+for i in c:
+    if i in a:
+        output+=1
+    elif i in b:
+        output-=1
+    else:
+        continue
+        
+print output

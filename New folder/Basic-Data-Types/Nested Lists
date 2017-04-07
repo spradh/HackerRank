@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+students=[]
+grades=[]
+secondLowest=[]
+for i in xrange(n):
+    name=raw_input()
+    grade=float(raw_input())
+    students.append([name,grade])
+    grades.append(grade)
+
+grades=list(set(grades))
+grades.remove(min(grades))
+
+for student in students:
+    if student[1]==min(grades):
+        secondLowest.append(student[0])
+secondLowest.sort()
+
+for i in secondLowest:
+    print i

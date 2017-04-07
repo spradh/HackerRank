@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+l,m=raw_input(),set(map(int,raw_input().split()))
+l,n=raw_input(),set(map(int,raw_input().split()))
+
+sd=sorted(list(m.difference(n).union(n.difference(m))))
+for i in xrange(len(sd)):
+    print sd[i]

@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+students={}
+
+n=int(raw_input())
+
+for i in range(0,n):
+    name=raw_input()
+    name=name.split()
+    students[name[0]]=(float(name[1])+float(name[2])+float(name[3]))/3
+name=raw_input()
+
+print "%.2f" % students[name]
+    

@@ -1,0 +1,29 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+L=[]
+
+n=int(raw_input())
+
+for i in xrange(n):
+    string=(raw_input())
+    string=string.split()
+    command=string[0]
+    if command=="insert":
+        position=int(string[1])
+        element=int(string[2])
+        L.insert(position,element)
+    elif command=="print":
+        print L
+    elif command=="remove":
+        element=int(string[1])
+        L.remove(element)
+    elif command=="append":
+        element=int(string[1])
+        L.append(element)
+    elif command=='sort':
+        L.sort()
+    elif command=='pop':
+        L.pop()
+    else:
+        L.reverse()
+  
+    

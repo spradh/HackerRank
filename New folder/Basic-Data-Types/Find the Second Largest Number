@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,list1=int(raw_input()),map(int,raw_input().split())
+list1=list(set(list1))
+
+def greatest_number(list1):
+    g=list1[0]
+    for n in list1:
+        if n>g:
+            g=n
+    return g
+
+list1.remove(greatest_number(list1))
+
+print greatest_number(list1)
+        

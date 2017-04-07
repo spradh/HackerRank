@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+string=raw_input()
+substring=raw_input()
+n=0
+for i in range(len(string)):
+    if string[i:i+len(substring)]==substring:
+        n+=1
+print n

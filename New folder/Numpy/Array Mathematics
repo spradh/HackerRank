@@ -1,0 +1,23 @@
+import numpy
+
+n,m=tuple(map(int,raw_input().split()))
+
+a=[]
+b=[]
+
+for i in xrange(n):
+    a.append(raw_input().split())
+
+for i in xrange(n):
+    b.append(raw_input().split())    
+
+    
+a=numpy.reshape(numpy.array(a,int),(n,m))
+b=numpy.reshape(numpy.array(b,int),(n,m))
+
+print numpy.add(a, b)      
+print numpy.subtract(a, b)   
+print numpy.multiply(a, b)  
+print numpy.divide(a, b)   
+print numpy.mod(a, b)        
+print numpy.power(a, b)

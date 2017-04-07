@@ -1,0 +1,5 @@
+A=set(raw_input().split())
+result=True
+for _ in xrange(int(raw_input())):
+    result=A.issuperset(set(raw_input().split()))
+print result
