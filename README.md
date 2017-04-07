@@ -1,2 +1,2 @@
-# hackerrank-sql-
+# hackerrank
 work space for hackerranck problems
