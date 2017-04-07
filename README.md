@@ -1,2 +1,2 @@
-# hackerrank
-work space for hackerranck problems
+# HackerRank
+work space for hackerRanck problems
