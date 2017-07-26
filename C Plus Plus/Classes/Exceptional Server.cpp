@@ -42,7 +42,7 @@ int main() {
      }catch(exception& e){
               cout<<"Exception: "<<e.what()<<endl;
      }catch(...){
-              cout<<"Other Exceptions"<<endl;
+              cout<<"Other Exception"<<endl;
      }
   }
 	cout << Server::getLoad() << endl;
