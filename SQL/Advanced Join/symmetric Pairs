@@ -1,13 +1,4 @@
-select t.x , t.y from (
-  select a.x, a.y from functions a
-    inner join functions b
-      on a.x = b.y
-         and a.y = b.x
-         and a.x < a.y
-  union
-  select x, y from functions a
-  where x=y
-  group by x,y
-  having count(*) > 1
-) t 
-order by t.x, t.y ;
+select min(x), max(y) from functions a
+group by (x+y),(x*y)
+having count(*)>1
+order by (x+y),(x*y)
