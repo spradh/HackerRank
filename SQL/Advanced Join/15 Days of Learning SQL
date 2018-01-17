@@ -1,3 +1,12 @@
 select submission_date,hacker_id,count(submission_id) total_submissions from submissions
 group by submission_date, hacker_id
 order by submission_date;
+
+select s1.hacker_id, count(distinct s1.submission_date) as num_of_days from (
+    select submission_date, hacker_id 
+        from submissions 
+        group by submission_date,hacker_id) s1
+group by s1.hacker_id
+having num_of_days=(
+    select count( distinct submission_date) from submissions 
+        group by submission_date);
