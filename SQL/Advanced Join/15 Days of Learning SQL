@@ -1,0 +1,3 @@
+select submission_date,hacker_id,count(submission_id) total_submissions from submissions
+group by submission_date, hacker_id
+order by submission_date;
